@@ -51,7 +51,7 @@ def main():
                 if num1 < 0:
                     print("Ошибка: Факториал отрицательного числа невозможен.")
                     continue
-                result = math.factorial(int(num1))
+                result = math.factorial(int(num1) if num1 >= 0 else 0)
             elif choice == '8':
                 result = math.sin(num1)
             elif choice == '9':
